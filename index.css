@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fefadf;
+}
+
+/*** Navigation Bar ***/
+div.navigation-bar {
+  background-color: #273617;
+  padding: 0 2%;
+}
+
+.navigation-bar .navbar-brand {
+  color: #adb5bd;
+}
+
+.navigation-bar .nav-link {
+  color: #efefef;
+}
+
+.navigation-bar .nav-link::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #adb5bd;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navigation-bar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navigation-bar .btn {
+  border-color: #adb5bd;
+  color: #adb5bd;
+}
+
+.navigation-bar .btn:hover {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+  color: #efefef;
+}
+
+.navigation-bar .nav-item {
+  margin: 0 0.4rem;
+  cursor: pointer;
+}
+
+.navigation-bar .nav-cart .btn {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #efefef;
+  border-radius: 3px;
+  margin: 0 0.4rem;
+  padding: 0.3rem 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-bar .nav-cart .btn:hover {
+  background-color: #efefef;
+  color: #212529;
+}
+
+.navigation-bar .nav-container {
+  display: flex; /** Move nav-links to the right**/
+}
+
+/* Monochromatics Colors Link: https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #e9ecef; /*anti-flash white for overall background*/
+}
+
+/*** Navigation Bar ***/
+/**.navigation-bar {
+  position: sticky;
+  top: 0;
+} use this to make the navigation bar sticky**/
+
+div.navigation-bar {
+  background-color: #e9ecef; /*anti-flash white for navigation*/
+  padding: 0 2%;
+}
+
+.navigation-bar .navbar-brand {
+  color: #212529;
+}
+
+.navigation-bar .nav-link {
+  color: #212529;
+}
+
+.navigation-bar .nav-link::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #212529;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navigation-bar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navigation-bar .btn {
+  border-color: #adb5bd;
+  color: #adb5bd;
+}
+
+.navigation-bar .btn:hover {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+  color: #efefef;
+}
+
+.navigation-bar .nav-item {
+  margin: 0 0.4rem;
+  cursor: pointer;
+}
+
+.navigation-bar .nav-item .btn {
+  font-size: 0.85rem;
+  color: #e9ecef;
+  text-decoration: none;
+  background-color: #212529;
+  border-radius: 3px;
+  margin-top: 2%;
+  padding: 0.3rem 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-bar .nav-item .btn:hover {
+  background-color: #e9ecef; /** anti-flash white **/
+  color: #212529; /** eerrie black **/
+  border: #0a0a0b solid 1.5px; /** night **/
+}
+
+.navigation-bar .nav-container {
+  display: flex; /** Move nav-links to the right**/
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+/*** Header ***/
+
+.header {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #212529; /** eerie black for header bg **/
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-1 {
+  flex-basis: 50%;
+  margin: auto;
+  padding-left: 3%;
+}
+
+.content-1 h1 {
+  color: #e9ecef; /** anti-flash white **/
+  font-weight: 500;
+  font-size: 3rem;
+  padding-right: 30%;
+  margin-bottom: 2%;
+}
+
+.content-1 p {
+  color: #e9ecef; /** anti-flash white **/
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 5%;
+}
+
+.content-1 .button {
+  text-decoration: none;
+  background-color: #e9ecef; /** anti-flash white **/
+  color: #212529; /** eerie black **/
+  padding: 1.5% 6%;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.content-1 .button:hover {
+  background-color: #0a0a0b; /** night **/
+  color: #ced4da; /** french gray (lighter) **/
+}
+
+.content-2 {
+  flex-basis: 40%;
+  margin: auto;
+}
+
+.content-2 img {
+  margin: auto;
+  max-height: 80vh;
+}
+
+/** About Us **/
+.about-us {
+  margin: auto;
+  padding: auto;
+  width: 85%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-1 {
+  flex-basis: 30%;
+  background-color: #ced4da; /** french gray (lighter) **/
+  margin: auto;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.about-1 h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 10% 10% 3%;
+}
+
+.about-1 .button {
+  padding: 0 10%;
+  text-decoration: none;
+  color: #343a40; /** onyx **/
+  transition: 0.5s;
+}
+
+.about-1 .bi {
+  font-size: 1.3rem;
+}
+
+.about-1 .button:hover {
+  background-color: #0a0a0b; /** night **/
+  color: #e9ecef; /** anti-flash white **/
+  padding: 5%;
+}
+
+.about-2 {
+  flex-basis: 33%;
+  margin: auto;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.about-2 .content {
+  height: 47%;
+  background-color: #ced4da; /** french gray (lighter) **/
+  margin-bottom: 6%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.about-3 {
+  flex-basis: 33%;
+  margin: auto;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.about-3 .content {
+  height: 47%;
+  background-color: #ced4da; /** french gray (lighter) **/
+  margin-bottom: 6%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+/** tabs **/
+.tabs {
+  width: 100%;
+  height: 100vh;
+  background-color: #adb5bd;
+  padding: 30px 0;
+}
+
+.tabs .container h5 {
+  opacity: 0.8;
+  color: #343a40; /**onyx**/
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/**Tab Buttons**/
+.tab_box {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tab_box .tab_btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212529; /**eerie black**/
+  background: none;
+  border: none;
+  padding: 18px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.tab_box .tab_btn.active {
+  background-color: #212529; /**eerie black**/
+  color: #e9ecef; /**anti-flash white**/
+  border-radius: 3px;
+  padding: 1.5% 3%;
+}
+
+/**Tab Schedule**/
+.content_box {
+  padding: 3%;
+}
+
+.content_box .contents {
+  display: none;
+  animation: moving 0.5s ease;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  t0 {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.content_box .contents.active {
+  display: block;
+}
+
+.content_box .contents .schedule {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content_box .contents h2 {
+  margin-bottom: 10px;
+}
+
+.schedule .card {
+  /**Image size should be 3:2 for schedule**/
+  width: 19rem;
+  height: 25rem;
+}
+
+.schedule .card-title {
+  font-weight: 500;
+}
+
+.schedule .card-text {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 10%;
+}
+
+.schedule .card .button {
+  text-decoration: none;
+  color: #e9ecef; /**anti-flash white **/
+  background-color: #212529; /**eerie black **/
+  padding: 3% 5%;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.schedule .card .button:hover {
+  background-color: #0a0a0b; /**night**/
+  padding: 5%;
+}
+
+/** Tab To-do List**/
+.contents .row .card {
+  margin-bottom: 5%;
+  background-color: #e9ecef; /**anti-flash white**/
+}
+.contents .row .card .btn {
+  background-color: #212529; /**eerie black**/
+  color: #e9ecef; /**anti-flash white**/
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contents .row .card .btn:hover {
+  background-color: #0a0a0b; /**night**/
+  margin-left: -3.5%;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-bar .nav-container {
+    display: contents; /** Disables flex property **/
+  }
+  /**header**/
+  .header {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .header .content-1 h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 10% 15% 5%;
+  }
+
+  .header .content-1 p {
+    padding: 0 5%;
+  }
+
+  .header .content-2 img {
+    max-height: 60vh;
+    padding-top: 5%;
+  }
+
+  /**About Us**/
+  .about-us {
+    display: block;
+    margin-top: 7%;
+  }
+
+  .about-1 {
+    height: 30vh;
+    margin: 5% 0 5%;
+  }
+
+  .about-2,
+  .about-3 {
+    margin-bottom: 7%;
+    height: 40vh;
+  }
+
+  .about-2 .content,
+  .about-3 .content {
+    margin-bottom: 5%;
+  }
+
+  /**Tabs**/
+
+  .tabs {
+    margin-top: 70%;
+    min-height: 160vh;
+    padding: 20px;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  /**Tab Buttons**/
+  .tab_box {
+    width: 100%;
+    display: block;
+  }
+  /**Tab Schedule**/
+  .content_box .contents .schedule {
+    display: block;
+  }
+  .contents .schedule .card {
+    margin: auto;
+    margin-bottom: 3%;
+    height: 13rem;
+    transition: 0.6s;
+  }
+
+  .schedule .card-body {
+    display: none;
+  }
+
+  .contents .schedule .card:hover,
+  .contents .schedule .card:hover .card-body {
+    height: 25rem;
+    display: block;
+  }
+
+  /**Tab To-do**/
+  .contents .row .card {
+    margin: 4% 0;
+  }
+
+  .contents .row .card .btn:hover {
+    margin-left: -5%;
+  }
+}
