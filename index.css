@@ -291,7 +291,7 @@ div.navigation-bar {
 /** tabs **/
 .tabs {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #adb5bd;
   padding: 30px 0;
 }
@@ -386,6 +386,7 @@ div.navigation-bar {
 }
 
 .schedule .card .button {
+  font-size: 0.9rem;
   text-decoration: none;
   color: #e9ecef; /**anti-flash white **/
   background-color: #212529; /**eerie black **/
@@ -405,7 +406,7 @@ div.navigation-bar {
   margin-bottom: 5%;
   background-color: #e9ecef; /**anti-flash white**/
 }
-.contents .row .card .btn {
+.contents .btn {
   background-color: #212529; /**eerie black**/
   color: #e9ecef; /**anti-flash white**/
   border-radius: 3px;
@@ -413,9 +414,9 @@ div.navigation-bar {
   cursor: pointer;
 }
 
-.contents .row .card .btn:hover {
+.contents .btn:hover {
   background-color: #0a0a0b; /**night**/
-  margin-left: -3.5%;
+  padding: 1.2%;
   border-radius: 0;
   overflow: hidden;
 }
@@ -471,6 +472,10 @@ div.navigation-bar {
     margin-bottom: 5%;
   }
 
+  .contents .note {
+    display: none;
+  }
+
   /**Tabs**/
   .tabs {
     margin-top: 70%;
@@ -507,11 +512,16 @@ div.navigation-bar {
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
   /** Header **/
   .header .content-2 img {
     max-height: 50vh;
     padding-top: 5%;
+  }
+  /**About Us**/
+  .about-us {
+    display: block;
+    margin-top: 20%;
   }
   /**Tab Buttons**/
   .tab_box {
@@ -533,8 +543,8 @@ div.navigation-bar {
   }
   /**Tabs**/
   .tabs {
-    margin-top: 85%;
-    height: 160vh;
+    margin-top: 100%;
+    height: 130vh;
   }
   .container {
     width: 100%;
@@ -544,12 +554,15 @@ div.navigation-bar {
   .content_box .contents .schedule {
     display: block;
   }
+
+  .contents .note {
+    display: block;
+  }
   .contents .schedule .card {
     margin: auto;
-    width: 16rem;
-    height: 11rem;
+    width: 15rem;
+    height: 7rem;
     transition: 0.6s;
-    margin-bottom: 3%;
   }
   .schedule .card-body {
     display: none;
@@ -557,8 +570,9 @@ div.navigation-bar {
 
   .contents .schedule .card:hover,
   .contents .schedule .card:hover .card-body {
-    height: 23rem;
     display: block;
+    height: 22rem;
+    margin: auto;
   }
   /**Tab To-do**/
   .contents .row .card {
