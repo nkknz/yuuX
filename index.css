@@ -420,6 +420,8 @@ div.navigation-bar {
   overflow: hidden;
 }
 
+/**Pomodoro Timer **/
+
 @media only screen and (max-width: 768px) {
   .navigation-bar .nav-container {
     display: contents; /** Disables flex property **/
@@ -470,14 +472,13 @@ div.navigation-bar {
   }
 
   /**Tabs**/
-
   .tabs {
     margin-top: 70%;
-    min-height: 160vh;
+    height: 105vh;
     padding: 20px;
   }
   .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   /**Tab Buttons**/
@@ -487,23 +488,13 @@ div.navigation-bar {
   }
   /**Tab Schedule**/
   .content_box .contents .schedule {
-    display: block;
+    display: flex;
   }
   .contents .schedule .card {
     margin: auto;
-    margin-bottom: 3%;
-    height: 13rem;
+    width: 13rem;
+    height: 22.5rem;
     transition: 0.6s;
-  }
-
-  .schedule .card-body {
-    display: none;
-  }
-
-  .contents .schedule .card:hover,
-  .contents .schedule .card:hover .card-body {
-    height: 25rem;
-    display: block;
   }
 
   /**Tab To-do**/
@@ -513,5 +504,64 @@ div.navigation-bar {
 
   .contents .row .card .btn:hover {
     margin-left: -5%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  /** Header **/
+  .header .content-2 img {
+    max-height: 50vh;
+    padding-top: 5%;
+  }
+  /**Tab Buttons**/
+  .tab_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .tab_box .tab_btn {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #212529; /**eerie black**/
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  /**Tabs**/
+  .tabs {
+    margin-top: 85%;
+    height: 160vh;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  /**Tab Schedule**/
+  .content_box .contents .schedule {
+    display: block;
+  }
+  .contents .schedule .card {
+    margin: auto;
+    width: 16rem;
+    height: 11rem;
+    transition: 0.6s;
+    margin-bottom: 3%;
+  }
+  .schedule .card-body {
+    display: none;
+  }
+
+  .contents .schedule .card:hover,
+  .contents .schedule .card:hover .card-body {
+    height: 23rem;
+    display: block;
+  }
+  /**Tab To-do**/
+  .contents .row .card {
+    margin: 2% 0;
   }
 }
