@@ -291,7 +291,7 @@ div.navigation-bar {
 /** tabs **/
 .tabs {
   width: 100%;
-  min-height: 70vh;
+  min-height: 50vh;
   background-color: #adb5bd;
   padding: 30px 0;
 }
@@ -313,7 +313,7 @@ div.navigation-bar {
 
 /**Tab Buttons**/
 .tab_box {
-  width: 35%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -450,14 +450,16 @@ div.navigation-bar {
   }
 
   .header .content-2 img {
-    max-height: 60vh;
+    max-height: 50vh;
     padding-top: 5%;
   }
 
   /**About Us**/
   .about-us {
     display: block;
-    margin-top: 7%;
+    min-height: 80vh;
+    margin: auto;
+    padding: auto;
   }
 
   .about-1 {
@@ -497,13 +499,28 @@ div.navigation-bar {
   }
   /**Tab Schedule**/
   .content_box .contents .schedule {
-    display: flex;
+    display: block;
+  }
+  .contents .note {
+    display: block;
   }
   .contents .schedule .card {
     margin: auto;
-    width: 13rem;
-    height: 22.5rem;
+    margin-bottom: 5%;
+    width: 15rem;
+    height: 10.5rem;
     transition: 0.6s;
+  }
+
+  .schedule .card-body {
+    display: none;
+  }
+
+  .contents .schedule .card:hover,
+  .contents .schedule .card:hover .card-body {
+    display: block;
+    height: 22rem;
+    margin: auto;
   }
 
   /**Tab To-do**/
