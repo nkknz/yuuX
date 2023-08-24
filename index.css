@@ -1,78 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  background-color: #fefadf;
-}
-
-/*** Navigation Bar ***/
-div.navigation-bar {
-  background-color: #273617;
-  padding: 0 2%;
-}
-
-.navigation-bar .navbar-brand {
-  color: #adb5bd;
-}
-
-.navigation-bar .nav-link {
-  color: #efefef;
-}
-
-.navigation-bar .nav-link::after {
-  content: '';
-  width: 0%;
-  height: 3px;
-  background: #adb5bd;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.navigation-bar .nav-link:hover::after {
-  width: 100%;
-}
-
-.navigation-bar .btn {
-  border-color: #adb5bd;
-  color: #adb5bd;
-}
-
-.navigation-bar .btn:hover {
-  background-color: #adb5bd;
-  border-color: #adb5bd;
-  color: #efefef;
-}
-
-.navigation-bar .nav-item {
-  margin: 0 0.4rem;
-  cursor: pointer;
-}
-
-.navigation-bar .nav-cart .btn {
-  font-weight: 900;
-  font-size: 1.2rem;
-  color: #efefef;
-  border-radius: 3px;
-  margin: 0 0.4rem;
-  padding: 0.3rem 1.2rem;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.navigation-bar .nav-cart .btn:hover {
-  background-color: #efefef;
-  color: #212529;
-}
-
-.navigation-bar .nav-container {
-  display: flex; /** Move nav-links to the right**/
-}
-
 /* Monochromatics Colors Link: https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
 
 * {
@@ -427,7 +352,7 @@ div.navigation-bar {
 
 /**Pomodoro Timer **/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .navigation-bar .nav-container {
     display: contents; /** Disables flex property **/
   }
