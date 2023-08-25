@@ -359,6 +359,111 @@ div.navigation-bar {
 
 /**Pomodoro Timer **/
 
+.pomodoro {
+  width: 100%;
+  min-height: 50vh;
+  padding: 5% 0;
+  border-radius: 20px;
+  align-items: center;
+  border: var(--pomodoro) 3px solid;
+  transition: border 1s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  user-select: none;
+}
+
+:root {
+  --pomodoro: hsl(223, 25%, 40%);
+  --shortBreak: hsl(48, 23%, 40%);
+  --longBreak: hsl(105, 16%, 40%);
+}
+
+progress {
+  border-radius: 2px;
+  width: 100%;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+progress::-webkit-progress-value {
+  background-color: #fff;
+}
+
+.timer {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+.clock {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 15rem;
+  line-height: 1;
+  align-items: center;
+}
+
+#js-mode-buttons {
+  width: 50%;
+  margin: auto;
+  padding: 1% 0;
+  border-radius: 5px;
+}
+
+.mode-button {
+  font-size: 16px;
+  height: 28px;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: 300;
+  color: #e9ecef; /** anti-flash white **/
+  border: 1px solid transparent;
+  margin: 0px;
+  border-radius: 4px;
+  padding: 2px 12px;
+  background: none;
+  transition: 0.5s ease-in-out;
+}
+
+.mode-button.active {
+  border-color: #fff;
+}
+
+.main-button {
+  cursor: pointer;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-size: 22px;
+  height: 55px;
+  text-transform: uppercase;
+  color: hsl(175, 26%, 41%);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  border-width: initial;
+  border-style: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  transition: color 0.5s ease-in-out 0s;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.main-button.active {
+  transform: translateY(6px);
+  box-shadow: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
 /** Support **/
 .support {
   width: 100%;
@@ -534,6 +639,25 @@ div.navigation-bar {
     margin-left: -5%;
   }
 
+  /** Pomodoro timer **/
+
+  .pomodoro {
+    min-height: 40vh;
+    padding: auto;
+  }
+
+  .clock {
+    font-size: 8rem;
+  }
+
+  #js-mode-buttons {
+    width: 80%;
+  }
+
+  .mode-button {
+    font-size: 1rem;
+  }
+
   /**Support **/
   .support {
     min-height: 50vh;
@@ -604,7 +728,7 @@ div.navigation-bar {
   /**Tabs**/
   .tabs {
     margin-top: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
   }
   .container {
     width: 100%;
@@ -638,6 +762,42 @@ div.navigation-bar {
   /**Tab To-do**/
   .contents .row .card {
     margin: 2% 0;
+  }
+
+  /** Pomodoro timer **/
+
+  .pomodoro {
+    min-height: 40vh;
+    padding: auto;
+  }
+
+  .clock {
+    font-size: 5rem;
+  }
+
+  #js-mode-buttons {
+    width: 80%;
+  }
+
+  .mode-button {
+    font-size: 0.5rem;
+  }
+
+  .main-button {
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: hsl(175, 26%, 41%);
+    font-weight: bold;
+    width: 120px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 0 0px 20px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
   }
 
   /**Support **/
