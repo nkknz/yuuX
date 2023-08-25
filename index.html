@@ -15,8 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -66,7 +65,7 @@
             <a class="button" href="#">Log-in</a>
         </div>
         <div class="content-2">
-            <img src="header.png">
+            <img src="images/header.png">
         </div>
     </div>
 
@@ -112,7 +111,7 @@
                     <p class="note">Click Card for more</p>
                     <div class="schedule">
                         <div class="card">
-                            <img src="schedule-1.png" class="card-img-top" alt="...">
+                            <img src="images/schedule-1.png" class="card-img-top" alt="...">
                             <!--Image size for schedule should be 3:2-->
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -123,7 +122,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="schedule-2.png" class="card-img-top" alt="...">
+                            <img src="images/schedule-2.png" class="card-img-top" alt="...">
                             <!--Image size for schedule should be 3:2-->
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -134,7 +133,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="schedule-3.png" class="card-img-top" alt="...">
+                            <img src="images/schedule-3.png" class="card-img-top" alt="...">
                             <!--Image size for schedule should be 3:2-->
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -187,24 +186,50 @@
                     </div>
                     <a href="#" class="btn">Go somewhere</a>
                 </div>
-                <div class="contents">
-                    <h2>Pomodoro</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Volutpat
-                        lacus laoreet non curabitur gravida. In est ante in nibh mauris. Tincidunt vitae semper quis
-                        lectus
-                        nulla at volutpat.</p>
+                <div class="contents" id="contents">
+                    <div class="pomodoro" id="pomodoro">
+                        <main class="app">
+                            <div class="timer">
+                                <div class="button-group mode-buttons" id="js-mode-buttons">
+                                    <button data-mode="pomodoro" class="button active mode-button" id="js-pomodoro">
+                                        Pomodoro
+                                    </button>
+                                    <button data-mode="shortBreak" class="button mode-button" id="js-short-break">
+                                        Short break
+                                    </button>
+                                    <button data-mode="longBreak" class="button mode-button" id="js-long-break">
+                                        Long break
+                                    </button>
+                                </div>
+                                <div class="clock" id="js-clock">
+                                    <span id="js-minutes">25</span>
+                                    <span class="separator">:</span>
+                                    <span id="js-seconds">00</span>
+                                </div>
+                                <progress id="js-progress" value="0"></progress>
+                                <div class="progress-bar"></div>
+                                <button class="main-button" data-action="start" id="js-btn">
+                                    Start
+                                </button>
+                            </div>
+                        </main>
+                        <div class="hidden">
+                            <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+                            <audio src="break.mp3" data-sound="shortBreak"></audio>
+                            <audio src="break.mp3" data-sound="longBreak"></audio>
+                        </div>
+                        <script src="javascript/index.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!--Support-->
+    <!--Support-->
     <div class="support">
         <div class="contents">
             <div class="support-1">
-                <img src="support.png">
+                <img src="images/support.png">
             </div>
             <div class="support-2">
                 <div class="support-header">
@@ -230,7 +255,7 @@
             </div>
         </div>
     </div>
-    
+
     <!--Tab Javascript-->
     <script>
         const tabs = document.querySelectorAll('.tab_btn');
@@ -245,6 +270,9 @@
                 all_content[index].classList.add('active');
             })
         })
+    </script>
+    <script>
+
     </script>
 </body>
 
