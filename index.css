@@ -761,9 +761,9 @@ button:active {
   }
   .contents .schedule .card {
     margin: auto;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     width: 15rem;
-    height: 7rem;
+    height: 10.2rem;
     transition: 0.6s;
   }
   .schedule .card-body {
