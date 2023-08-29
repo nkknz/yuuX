@@ -301,7 +301,7 @@ div.navigation-bar {
 .schedule .card {
   /**Image size should be 3:2 for schedule**/
   width: 19rem;
-  height: 25rem;
+  height: 24.5rem;
 }
 
 .schedule .card-title {
@@ -515,20 +515,66 @@ button:active {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.support-2 .button {
+.support-2 .support-btn {
   width: 100%;
   background-color: #212529; /** eerie black **/
   margin: auto;
   padding: 1.5% 0;
   border-radius: 3px;
   text-align: center;
+  cursor: pointer;
 }
 
-.support-2 .button a {
+.support-2 .support-btn a {
   text-decoration: none;
   color: #e9ecef; /** anti-flash white **/
+  padding: 0 40%;
 }
 
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #495057;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #e9ecef;
+  opacity: 0.6;
+}
+
+.footer .footer-text {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #e9ecef;
+  opacity: 0.8;
+}
+
+.footer .created {
+  color: #e9ecef;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.icons {
+  margin-bottom: 1%;
+  opacity: 0.6;
+}
+
+.icons .bi {
+  color: #e9ecef;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
 @media only screen and (max-width: 1000px) {
   .navigation-bar .nav-container {
     display: contents; /** Disables flex property **/
@@ -559,29 +605,26 @@ button:active {
 
   /**About Us**/
   .about-us {
-    display: block;
     min-height: 50vh;
+    display: block;
     margin: auto;
-    padding: auto;
+    padding: 5% 0 2%;
+    align-items: center;
   }
 
   .about-1 {
-    height: 30vh;
-    margin: 5% 0 5%;
+    height: 25vh;
   }
 
-  .about-2 {
-    margin-bottom: 7%;
-    height: 40vh;
-  }
-
+  .about-2,
   .about-3 {
-    height: 40vh;
+    height: 35vh;
+    margin: 3% 0;
   }
 
   .about-2 .content,
   .about-3 .content {
-    margin-bottom: 5%;
+    margin: 3% 0;
   }
 
   .contents .note {
@@ -590,13 +633,15 @@ button:active {
 
   /**Tabs**/
   .tabs {
-    margin-top: 70%;
+    width: 100%;
     min-height: 50vh;
-    padding: 20px;
+    margin: auto;
+    padding: auto;
   }
   .container {
-    width: 100%;
+    width: 85%;
     margin: auto;
+    padding: auto;
   }
   /**Tab Buttons**/
   .tab_box {
@@ -747,8 +792,8 @@ button:active {
     padding: auto;
   }
   .container {
-    width: 100%;
-    margin: 7% 0;
+    width: 90%;
+    margin: auto;
     padding: auto;
   }
   /**Tab Schedule**/
